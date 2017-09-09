@@ -1,7 +1,7 @@
 # 注意使用的当前分支
-git branch -a                                         //List all branches
-git checkout <name_of_branch>                           //Checkout the branch that you want
-git checkout indigo-devel                             // 更改branch为indigo
+    git branch -a                                         //List all branches
+    git checkout <name_of_branch>                         //Checkout the branch that you want
+    git checkout indigo-devel                             // 更改branch为indigo
 
 # MoveIt! Tutorials
 
