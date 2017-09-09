@@ -1,3 +1,8 @@
+# 注意使用的当前分支
+git branch -a                                         //List all branches
+git checkout <name_of_branch>                           //Checkout the branch that you want
+git checkout indigo-devel                             // 更改branch为indigo
+
 # MoveIt! Tutorials
 
 This repo is automatically built by the ROS build farm and its output is hosted here: http://docs.ros.org/indigo/api/moveit_tutorials/html/
