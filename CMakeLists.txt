@@ -19,14 +19,18 @@ catkin_package(
     moveit_ros_planning_interface
     interactive_markers
 )
+
 find_package(Eigen REQUIRED)
 
 ###########
 ## Build ##
 ###########
 
-include_directories(SYSTEM ${Boost_INCLUDE_DIR} ${EIGEN_INCLUDE_DIRS})
+include_directories(SYSTEM 
+                    ${Boost_INCLUDE_DIR} 
+                    ${EIGEN_INCLUDE_DIRS})
 include_directories(${catkin_INCLUDE_DIRS})
+
 link_directories(${catkin_LIBRARY_DIRS})
 
 add_subdirectory(doc/pr2_tutorials/kinematics)

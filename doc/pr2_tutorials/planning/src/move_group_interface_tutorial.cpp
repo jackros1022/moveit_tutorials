@@ -83,8 +83,8 @@ int main(int argc, char **argv)
 
   // Planning to a Pose goal
   // ^^^^^^^^^^^^^^^^^^^^^^^
-  // We can plan a motion for this group to a desired pose for the 
-  // end-effector.
+  // We can plan a motion for this group to a desired pose for the end-effector.
+  // 【１】　指定位置运动
   geometry_msgs::Pose target_pose1;
   target_pose1.orientation.w = 1.0;
   target_pose1.position.x = 0.28;
@@ -107,9 +107,9 @@ int main(int argc, char **argv)
   // Visualizing plans
   // ^^^^^^^^^^^^^^^^^
   // Now that we have a plan we can visualize it in Rviz.  This is not
-  // necessary because the group.plan() call we made above did this
-  // automatically.  But explicitly publishing plans is useful in cases that we
-  // want to visualize a previously created plan.
+  // necessary because the group.plan() call we made above did this　automatically. 
+  // But explicitly publishing plans is useful in cases that we　want to visualize a previously created plan.
+  // 
   if (1)
   {
     ROS_INFO("Visualizing plan 1 (again)");    
@@ -156,7 +156,7 @@ int main(int argc, char **argv)
 
   // Planning with Path Constraints
   // ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  //
+  //路径限制
   // Path constraints can easily be specified for a link on the robot.
   // Let's specify a path constraint and a pose goal for our group.
   // First define the path constraint.
